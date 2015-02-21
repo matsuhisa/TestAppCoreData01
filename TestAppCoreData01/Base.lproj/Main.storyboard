@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestAppCoreData01" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJt-mz-gf3">
+                                <rect key="frame" x="30" y="50" width="540" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUW-iH-T3G">
+                                <rect key="frame" x="30" y="110" width="540" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="phf-eu-ACf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M12-4K-z3r">
+                                <rect key="frame" x="285" y="300" width="30" height="30"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SUW-iH-T3G" secondAttribute="trailing" constant="30" id="2gU-wD-RKL"/>
+                            <constraint firstItem="SUW-iH-T3G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="63O-gJ-JM8"/>
+                            <constraint firstItem="QJt-mz-gf3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="E8C-f1-P8B"/>
+                            <constraint firstItem="SUW-iH-T3G" firstAttribute="top" secondItem="QJt-mz-gf3" secondAttribute="bottom" constant="30" id="Ead-SH-Hbb"/>
+                            <constraint firstAttribute="trailing" secondItem="QJt-mz-gf3" secondAttribute="trailing" constant="30" id="JcJ-ZL-ras"/>
+                            <constraint firstItem="SUW-iH-T3G" firstAttribute="top" secondItem="QJt-mz-gf3" secondAttribute="bottom" constant="30" id="QAO-4d-WYm"/>
+                            <constraint firstItem="QJt-mz-gf3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="ShA-ND-vyT"/>
+                            <constraint firstItem="M12-4K-z3r" firstAttribute="top" secondItem="SUW-iH-T3G" secondAttribute="bottom" constant="40" id="xFR-hS-4AJ"/>
+                            <constraint firstAttribute="centerX" secondItem="M12-4K-z3r" secondAttribute="centerX" id="ySj-FV-ZO1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ead-SH-Hbb"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="ButtonSave" destination="M12-4K-z3r" id="izx-pN-hoA"/>
+                        <outlet property="TextFieldTitle" destination="QJt-mz-gf3" id="z9H-UY-fKs"/>
+                        <outlet property="TextViewBody" destination="SUW-iH-T3G" id="p1J-ci-kwW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

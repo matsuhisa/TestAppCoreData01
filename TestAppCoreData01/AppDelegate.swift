@@ -1,10 +1,5 @@
-//
 //  AppDelegate.swift
 //  TestAppCoreData01
-//
-//  Created by 松久浩伸 on 2015/02/21.
-//  Copyright (c) 2015年 matsuhisa.hironobu. All rights reserved.
-//
 
 import UIKit
 import CoreData

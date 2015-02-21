@@ -14,6 +14,7 @@
 		B925F03E1A984BC900A80368 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B925F03D1A984BC900A80368 /* Images.xcassets */; };
 		B925F0411A984BC900A80368 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B925F03F1A984BC900A80368 /* LaunchScreen.xib */; };
 		B925F04D1A984BC900A80368 /* TestAppCoreData01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925F04C1A984BC900A80368 /* TestAppCoreData01Tests.swift */; };
+		B925F05A1A9858B500A80368 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925F0591A9858B500A80368 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B925F0461A984BC900A80368 /* TestAppCoreData01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppCoreData01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B925F04B1A984BC900A80368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B925F04C1A984BC900A80368 /* TestAppCoreData01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppCoreData01Tests.swift; sourceTree = "<group>"; };
+		B925F0591A9858B500A80368 /* MemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B925F03F1A984BC900A80368 /* LaunchScreen.xib */,
 				B925F0351A984BC900A80368 /* TestAppCoreData01.xcdatamodeld */,
 				B925F0311A984BC900A80368 /* Supporting Files */,
+				B925F0591A9858B500A80368 /* MemoData.swift */,
 			);
 			path = TestAppCoreData01;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				B925F0391A984BC900A80368 /* ViewController.swift in Sources */,
 				B925F0341A984BC900A80368 /* AppDelegate.swift in Sources */,
 				B925F0371A984BC900A80368 /* TestAppCoreData01.xcdatamodeld in Sources */,
+				B925F05A1A9858B500A80368 /* MemoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
